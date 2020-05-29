@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="693dp"
+        android:layout_marginLeft="@dimen/padd_10"
+        android:layout_marginTop="@dimen/padd_10"
+        android:layout_marginRight="@dimen/padd_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/identificación"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/identificación"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/album_title" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/codigo"
+            android:text="@string/nombre"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:paddingLeft="@dimen/product_title_padding"
+            android:paddingRight="@dimen/product_title_padding"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/curso_card_text" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nombre"
+            android:text="@string/apellido1"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/apellido1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView4"
+            android:paddingLeft="@dimen/product_title_padding"
+            android:paddingRight="@dimen/product_title_padding"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/curso_card_text" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apellido2"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/apellido2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView5"
+            android:paddingLeft="@dimen/product_title_padding"
+            android:paddingRight="@dimen/product_title_padding"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/curso_card_text" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cursos"
+            android:textColor="@color/colorAccent" />
+
+        <Spinner
+            android:id="@+id/cursos"
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_insert_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_gravity="bottom|end"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+    <Button
+        android:id="@+id/btn_agrega_curso"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Agregar Curso"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="center" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="bottom|center" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
