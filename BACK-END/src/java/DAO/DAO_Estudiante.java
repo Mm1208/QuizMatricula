@@ -58,8 +58,8 @@ public class DAO_Estudiante extends Service {
             }
             return pstmt;
         });
-        matching_curso_with_estudiante(object);
         mismatching_curso_with_estudiante(object);
+        matching_curso_with_estudiante(object);
     }
 
     public Estudiante query(Estudiante p_object) {
