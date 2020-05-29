@@ -1,0 +1,46 @@
+
+<script src="Javascript/header.js"></script>
+
+<link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" id="header_link_logo">
+            <img class="fa fa-bar-chart" id="header_logo" src="img/logo.png">
+        </a>
+        <a class="nav-item" id="header_link_nombre">
+            SIMA
+        </a>
+        <button id="header_button_menu_responsive" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header_navbar_content" aria-controls="header_navbar_content" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="header_navbar_content">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" id="header_link_inicio">Inicio
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="header_link_acerca_de">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"  id="header_link_ayuda">Ayuda</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <label id="header_nombre_usuario"></label>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item"  id="header_link_perfil">Perfil</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" id="header_link_cerrar_sesion">Cerrar sesión</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br>

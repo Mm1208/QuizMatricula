@@ -1,0 +1,120 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /*background: url("https://images.app.goo.gl/2s8djUNoD5hUndPD9");*/
+    /*background: url("http://www.fondosblackberry.com/user-content/uploads/wall/o/78/Tribunal_Supremo_de_Elecciones_de_Costa_Rica.JPG");*/
+}
+.form-group.text-left{
+    text-align: left;
+}
+
+.box{
+    background: rgba(0,0,0,0.1);
+    text-align: center;
+    border: 2px solid #191919;
+    border-radius: 10px;
+}
+
+.box card-header h1{
+    color: white;
+}
+
+.box input[type = "text"], .box input[type = "password"]{
+    background: rgba(255,255,255,0.6);
+    border: 2px solid #3498db;
+    border-radius: 24px;
+    color: black;
+}
+
+.box input[type = "text"]:focus, .box input[type = "password"]:focus{
+    border-color: #2ecc71;
+    background-color: white;
+}
+
+.box button[type = "button"]{
+    border: 0;
+    background: none;
+    border: 2px solid #3498db;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box button[type = "button"]:hover{
+    background: #3498db;
+}
+
+.table-fixed tbody {
+    height: 300px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.table-fixed thead,
+.table-fixed tbody{
+    display: block;
+}
+
+a, p, input, button, body, div{
+    font-size: 18px;
+}
+
+.box.button-primary {
+    font-size: 18px;
+}
+
+.box.form-control {
+    font-size: 18px;
+}
+
+h1{
+    font-size: 22px;
+}
+
+#title{
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+#pdf{
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.table thead th label {
+    font-size: 12px;
+    color: white;
+}
+
+.table tbody tr td label {
+    font-size: 12px;
+}
+
+.ui-datepicker-calendar {
+    display: none;
+}
+
+#header_logo{
+    width: 60px;
+    height: 60px;
+    color:white;
+}
+
+#perfil_imagen{
+    width: 100px;
+    height:100px;
+}
+
+.txt-right{
+    text-align: right;
+}
+
+.modal{
+    margin-top: 15px;
+    background-color: rgba(0,0,0, 0.3);
+}
