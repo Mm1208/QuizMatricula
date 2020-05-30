@@ -320,7 +320,7 @@ BEGIN
 
 OPEN CURSOR_ESTUDIANTE FOR 
 
-SELECT Estu_id_PK, Pers_nomb, Pers_ape1, Pers_ape2, Estu_edad FROM TB_Estudiante, TB_Persona WHERE Pers_id_PK = Pers_id_FK; 
+SELECT Estu_id_PK, Pers_nomb, Pers_ape1, Pers_ape2, Estu_edad FROM TB_Estudiante, TB_Persona WHERE Pers_id_PK = Pers_id_FK ORDER BY Estu_id_PK DESC; 
 
 RETURN CURSOR_ESTUDIANTE; 
 
@@ -563,7 +563,11 @@ BEGIN
 
 OPEN CURSOR_curso_x_estudiante FOR 
 
-SELECT Curs_id_FK, Estu_id_FK FROM TB_Curso_X_Estudiante WHERE Estu_id_FK = P_Estu_id_FK;
+SELECT Curs_id_FK, Curs_codi, Curs_nomb, Curs_cred, Curs_hora_sema, Curs_anno, Cicl_id_FK, Carr_id_FK
+FROM TB_Curso_X_Estudiante
+JOIN TB_Curso C
+ON C.Curs_id_PK = Curs_id_FK
+WHERE Estu_id_FK = P_Estu_id_FK;
 
 RETURN CURSOR_curso_x_estudiante;
 
@@ -941,6 +945,12 @@ select * from TB_Profesor;
 PROMPT #1 inserts Estudiante
 call insert_estudiante('Alexis','B','C',19);
 select * from TB_Estudiante;
+
+PROMPT #1 inserts Curso_X_Estudiante
+call insert_curso_x_estudiante(1,1);
+call insert_curso_x_estudiante(2,1);
+call insert_curso_x_estudiante(3,1);
+select * from tb_curso_x_estudiante;
 
 PROMPT #1 inserts Usuarios
 call insert_usuario('Jo1234','1234','P',1);

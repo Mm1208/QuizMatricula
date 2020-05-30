@@ -39,6 +39,7 @@ public class DAO_Estudiante extends Service {
             }
             return pstmt;
         });
+        object.setId(list().get(0).getId());
         matching_curso_with_estudiante(object);
     }
 
@@ -142,8 +143,8 @@ public class DAO_Estudiante extends Service {
             general_method((CallableStatement pstmt) -> {
                 try {
                     pstmt = connection.prepareCall(CRUD_Estudiante.INSERT.getValue());
-                    pstmt.setInt(1, p_object.getId());
-                    pstmt.setInt(2, curso.getId());
+                    pstmt.setInt(1, curso.getId());
+                    pstmt.setInt(2, p_object.getId());
                     if (pstmt.execute()) {
                         throw new RuntimeException(Menssage_Error.OBJECT_NOT_INSERTED.getValue());
                     }
@@ -160,8 +161,8 @@ public class DAO_Estudiante extends Service {
             general_method((CallableStatement pstmt) -> {
                 try {
                     pstmt = connection.prepareCall(CRUD_Estudiante.DELETE.getValue());
-                    pstmt.setInt(1, p_object.getId());
-                    pstmt.setInt(2, curso.getId());
+                    pstmt.setInt(1, curso.getId());
+                    pstmt.setInt(2, p_object.getId());
                     if (pstmt.execute()) {
                         throw new RuntimeException(Menssage_Error.OBJECT_NOT_DELETED.getValue());
                     }
