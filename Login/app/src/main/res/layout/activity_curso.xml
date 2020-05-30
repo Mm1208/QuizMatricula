@@ -19,7 +19,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/codigo"
+            android:text="Codigo"
             android:textColor="@color/colorAccent" />
 
         <EditText
@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/codigo"
-            android:text="@string/nombre"
+            android:text="Nombre"
             android:textColor="@color/colorAccent" />
 
         <EditText
@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/nombre"
-            android:text="@string/creditos"
+            android:text="Creditos"
             android:textColor="@color/colorAccent" />
 
         <EditText
@@ -71,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/creditos"
-            android:text="@string/hora_semana"
+            android:text="Hora Semana"
             android:textColor="@color/colorAccent" />
 
         <EditText
@@ -89,7 +89,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/hora_semana"
-            android:text="@string/anno"
+            android:text="Año"
             android:textColor="@color/colorAccent" />
 
         <EditText
@@ -107,7 +107,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/anno"
-            android:text="@string/ciclo"
+            android:text="Ciclo"
             android:textColor="@color/colorAccent" />
 
         <EditText
@@ -125,7 +125,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ciclo"
-            android:text="@string/carrera"
+            android:text="Carrera"
             android:textColor="@color/colorAccent" />
 
         <EditText

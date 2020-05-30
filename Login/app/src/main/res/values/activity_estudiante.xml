@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="identificación">Identificación:</string>
-    <string name="nombre">Nombre:</string>
-    <string name="apellido1">Primer Apellido:</string>
-    <string name="apellido2">Segundo Apellido:</string>
-    <string name="cursos">Agregar Cursos:</string>
-</resources>

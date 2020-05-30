@@ -12,10 +12,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ServicioEstudiante {
-    public final static String LIST_ESTUDIANTES_URL = "http://10.0.2.2:8080/SIMA/estudiante?opcion=list";
-    public final static String INSERT_ESTUDIANTE_URL = "http://10.0.2.2:8080/SIMA/estudiante?opcion=insert";
-    public final static String UPDATE_ESTUDIANTE_URL = "http://10.0.2.2:8080/SIMA/estudiante?opcion=update";
-    public final static String DELETE_ESTUDIANTE_URL = "http://10.0.2.2:8080/SIMA/estudiante?opcion=delete";
+    public final static String LIST_ESTUDIANTES_URL = "http://10.0.2.2:8080/BACK-END/estudiante?opcion=list";
+    public final static String INSERT_ESTUDIANTE_URL = "http://10.0.2.2:8080/BACK-END/estudiante?opcion=insert";
+    public final static String UPDATE_ESTUDIANTE_URL = "http://10.0.2.2:8080/BACK-END/estudiante?opcion=update";
+    public final static String DELETE_ESTUDIANTE_URL = "http://10.0.2.2:8080/BACK-END/estudiante?opcion=delete";
     private final static Gson gson = new Gson();
     private final static ServicioEstudiante servicioEstudiante = new ServicioEstudiante();
 

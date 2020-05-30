@@ -20,7 +20,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/identificación"
+            android:text="Identificacion"
             android:textColor="@color/colorAccent" />
 
         <EditText
@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/codigo"
-            android:text="@string/nombre"
+            android:text="Nombre"
             android:textColor="@color/colorAccent" />
 
         <EditText
@@ -54,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/nombre"
-            android:text="@string/apellido1"
+            android:text="Apellido 1"
             android:textColor="@color/colorAccent" />
 
         <EditText
@@ -71,7 +71,7 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/apellido2"
+            android:text="Apellido 2"
             android:textColor="@color/colorAccent" />
 
         <EditText
@@ -88,7 +88,7 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/cursos"
+            android:text="Cursos"
             android:textColor="@color/colorAccent" />
 
         <Spinner

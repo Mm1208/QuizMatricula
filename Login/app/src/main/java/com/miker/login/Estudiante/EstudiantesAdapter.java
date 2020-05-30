@@ -145,7 +145,7 @@ public class EstudiantesAdapter extends RecyclerView.Adapter<EstudiantesAdapter.
                     List<Estudiante> filteredList = new ArrayList<>();
                     for (Estudiante row : estudianteList) {
                         // filter use two parameters
-                        if (row.getCodigo().toLowerCase().contains(charString.toLowerCase()) || row.getNombre().toLowerCase().contains(charString.toLowerCase())) {
+                        if (row.getNombre().toLowerCase().contains(charString.toLowerCase())) {
                             filteredList.add(row);
                         }
                     }
