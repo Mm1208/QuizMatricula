@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -69,13 +70,13 @@ public class EstudiantesActivity extends AppCompatActivity implements RecyclerIt
         //coordinatorLayout = findViewById(R.id.main_content);
 
         // go to update or add career
-        btn_insert = findViewById(R.id.btn_insert);
+       btn_insert = findViewById(R.id.add);
         btn_insert.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                insert_estudiante();
-            }
-        });
+                         public void onClick(View view) {
+                 insert_estudiante();
+                         }
+     });
 
         //delete swiping left and right
         ItemTouchHelper.SimpleCallback itemTouchHelperCallback = new RecyclerItemTouchHelper(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT, this);
