@@ -71,8 +71,20 @@ public class Cursos extends HttpServlet {
 
     public void opciones(HttpServletRequest request, HttpServletResponse response) throws Exception {
         String opcion = verifyString(request.getParameter("opcion"), "una opción");
-        String result;
+        String result = null;
         switch (opcion) {
+            case "insert":
+                model.insert(request.getParameter("json"));
+                Synchronizer.getSynchronizer().setChange(true);
+                break;
+            case "update":
+                model.update(request.getParameter("json"));
+                Synchronizer.getSynchronizer().setChange(true);
+                break;
+            case "delete":
+                model.delete(request.getParameter("json"));
+                Synchronizer.getSynchronizer().setChange(true);
+                break;
             case "query":
                 result = model.query(request.getParameter("json")).getJSON().toString();
                 break;
@@ -90,8 +102,12 @@ public class Cursos extends HttpServlet {
             default:
                 throw new Exception("¡Opción desconocida!");
         }
-        response.setContentType("text/plain");
-        response.getWriter().write(result);
+        if (result == null) {
+            response.setStatus(200);
+        } else {
+            response.setContentType("text/plain");
+            response.getWriter().write(result);
+        }
     }
 
 }

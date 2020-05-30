@@ -46,12 +46,12 @@ public class EstudiantesActivity extends AppCompatActivity implements RecyclerIt
     private EstudiantesAdapter adapter;
     private List<Estudiante> estudianteList;
     private Estudiante deleteEstudiante;
-    private CoordinatorLayout coordinatorLayout;
+   // private CoordinatorLayout coordinatorLayout;
     private SearchView searchView;
     private FloatingActionButton btn_insert;
     private Model model;
     private ProgressDialog progressDialog;
-    private String message;
+    private static String message;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +66,7 @@ public class EstudiantesActivity extends AppCompatActivity implements RecyclerIt
         recyclerView = findViewById(R.id.recycler_view);
         estudianteList = new ArrayList<>();
         model = new Model();
-        coordinatorLayout = findViewById(R.id.main_content);
+        //coordinatorLayout = findViewById(R.id.main_content);
 
         // go to update or add career
         btn_insert = findViewById(R.id.btn_insert);
