@@ -53,7 +53,7 @@ public class EstudianteActivity extends AppCompatActivity {
 
     private void matching() throws Exception {
         // view
-        setContentView(R.layout.activity_curso);
+        setContentView(R.layout.activity_estudiante);
         //textview
         String list = Servicio.run(LIST_CURSO_URL);
         id = findViewById(R.id.identificación);

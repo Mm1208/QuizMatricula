@@ -19,6 +19,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.gson.Gson;
+import com.miker.login.Estudiante.EstudianteActivity;
 import com.miker.login.Estudiante.EstudiantesActivity;
 import com.miker.login.carrera.CarrerasActivity;
 import com.miker.login.curso.CursosActivity;
@@ -100,7 +101,7 @@ public class NavDrawerActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_estudiantes) {
-            Intent intent = new Intent(NavDrawerActivity.this, EstudiantesActivity.class);
+            Intent intent = new Intent(NavDrawerActivity.this, EstudianteActivity.class);
             NavDrawerActivity.this.startActivity(intent);
             // Handle the camera action
         } else if (id == R.id.nav_matricula) {
