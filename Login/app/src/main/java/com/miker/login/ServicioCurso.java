@@ -28,10 +28,10 @@ import java.util.List;
 import static com.miker.login.Model.LIST_CURSO_URL;
 
 public class ServicioCurso {
-    public final static String LIST_CURSO_URL = "http://10.0.2.2:8080/SIMA/curso?opcion=list";
-    public final static String INSERT_CURSO_URL = "http://10.0.2.2:8080/SIMA/curso?opcion=insert";
-    public final static String UPDATE_CURSO_URL = "http://10.0.2.2:8080/SIMA/curso?opcion=update";
-    public final static String DELETE_CURSO_URL = "http://10.0.2.2:8080/SIMA/curso?opcion=delete";
+    public final static String LIST_CURSO_URL = "http://10.0.2.2:8080/BACK-END/curso?opcion=list";
+    public final static String INSERT_CURSO_URL = "http://10.0.2.2:8080/BACK-END/curso?opcion=insert";
+    public final static String UPDATE_CURSO_URL = "http://10.0.2.2:8080/BACK-END/curso?opcion=update";
+    public final static String DELETE_CURSO_URL = "http://10.0.2.2:8080/BACK-END/curso?opcion=delete";
     private final static Gson gson = new Gson();
     private final static ServicioCurso servicioCurso = new ServicioCurso();
 

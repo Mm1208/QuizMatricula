@@ -17,7 +17,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.ItemTouchHelper;
@@ -47,7 +46,6 @@ public class EstudiantesActivity extends AppCompatActivity implements RecyclerIt
     private EstudiantesAdapter adapter;
     private List<Estudiante> estudianteList;
     private Estudiante deleteEstudiante;
-   // private CoordinatorLayout coordinatorLayout;
     private SearchView searchView;
     private FloatingActionButton btn_insert;
     private Model model;
