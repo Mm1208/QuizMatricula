@@ -1,0 +1,46 @@
+
+<%@ page pageEncoding="UTF-8" %>
+<script src="Javascript/carrera.js"></script>
+
+<div class="modal fade" id="carrera_modal" tabindex="-1" role="dialog" aria-labelledby="carrera_title" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div id="carrera_content">
+            <div id="carrera_header">
+                <h5 id="carrera_title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="false">&times;</span>
+                </button>
+            </div>
+            <div id="carrera_body">
+                <div class="form-row">
+                    <div class="col">
+                        <label for="carrera_codigo">Código:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="carrera_codigo">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="carrera_nombre">Nombre:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="carrera_nombre">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="carrera_titulo">Título:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="carrera_titulo">
+                    </div>
+                </div>
+            </div>
+            <div id="carrera_footer">
+                <button id="carrera_btn_primary" type="button" data-dismiss="modal"></button>
+                <button id="carrera_btn_secondary" type="button"></button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+
+<%@ page pageEncoding="UTF-8" %>
+<script src="Javascript/confirmation.js"></script>
+
+<div class="modal fade" id="confirmation_modal" tabindex="-1" role="dialog" aria-labelledby="confirmation_title" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div id="confirmation_content" class="">
+            <div id="confirmation_header">
+                <h5 id="confirmation_title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div id="confirmation_body">
+            </div>
+            <div id="confirmation_footer">
+                <button id="confirmation_btn_primary" type="button" data-dismiss="modal"></button>
+                <button id="confirmation_btn_secondary" type="button"></button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+#div1{
+    
+    background: rgba(0,0,0,0.3);
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border: 2px solid #191919;
+    border-radius: 10px;
+}
+
+
+body{
+  min-height: 100%;
+    margin-bottom: -50px;
+}

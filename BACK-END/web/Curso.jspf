@@ -1,0 +1,78 @@
+
+<%@ page pageEncoding="UTF-8" %>
+<script src="Javascript/curso.js"></script>
+
+<div class="modal fade" id="curso_modal" tabindex="-1" role="dialog" aria-labelledby="curso_title" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div id="curso_content">
+            <div id="curso_header">
+                <h5 id="curso_title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div id="curso_body">
+                <div class="form-row">
+                    <div class="col">
+                        <label for="curso_codigo">Código:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="curso_codigo">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="curso_nombre">Nombre:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="curso_nombre">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="curso_creditos">Cantidad de créditos:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="curso_creditos">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="curso_anno">Año o nivel:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="curso_anno">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="curso_horas">Cantidad de horas semanales</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="curso_horas">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="curso_ciclo">Ciclo:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="curso_ciclo">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="curso_carrera">Carrera:</label>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" id="curso_carrera">
+                    </div>
+                </div>
+            </div>
+            <div id="curso_footer">
+                <button id="curso_btn_primary" type="button" data-dismiss="modal"></button>
+                <button id="curso_btn_secondary" type="button"></button>
+            </div>
+        </div>
+    </div>
+</div>
