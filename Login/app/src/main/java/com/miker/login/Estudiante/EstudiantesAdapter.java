@@ -35,7 +35,7 @@ public class EstudiantesAdapter extends RecyclerView.Adapter<EstudiantesAdapter.
 
         public MyViewHolder(View view) {
             super(view);
-            id = (TextView) view.findViewById(R.id.identificación);
+            id = (TextView) view.findViewById(R.id.id);
             nombre = (TextView) view.findViewById(R.id.nombre);
             viewBackgroundDelete = view.findViewById(R.id.view_background_delete);
             viewBackgroundEdit = view.findViewById(R.id.view_background_edit);
@@ -59,7 +59,7 @@ public class EstudiantesAdapter extends RecyclerView.Adapter<EstudiantesAdapter.
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.curso_card, parent, false);
+                .inflate(R.layout.estudiante_card, parent, false);
 
         return new MyViewHolder(itemView);
     }
