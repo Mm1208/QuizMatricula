@@ -16,14 +16,6 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Estudiante.EstudiantesActivity"
-            android:label="@string/title_activity_estudiantes"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".Estudiante.EstudianteActivity"
-            android:label="@string/title_activity_estudiante"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login">
             <intent-filter>
@@ -51,6 +43,14 @@
         <activity
             android:name=".carrera.CarreraActivity"
             android:label="@string/backdrop_title2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Estudiante.EstudiantesActivity"
+            android:label="@string/title_activity_estudiantes"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Estudiante.EstudianteActivity"
+            android:label="@string/title_activity_estudiante"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
