@@ -11,6 +11,7 @@
         import androidx.recyclerview.widget.ItemTouchHelper;
         import androidx.recyclerview.widget.RecyclerView;
 
+        import com.miker.login.Estudiante.EstudiantesAdapter;
         import com.miker.login.carrera.CarrerasAdapter;
         import com.miker.login.curso.CursosAdapter;
 
@@ -68,6 +69,10 @@ public class RecyclerItemTouchHelper extends ItemTouchHelper.SimpleCallback {
                 backgroundViewEdit = ((CarrerasAdapter.MyViewHolder) viewHolder).viewBackgroundEdit;
                backgroundViewDelete = ((CarrerasAdapter.MyViewHolder) viewHolder).viewBackgroundDelete;
                 foregroundView = ((CarrerasAdapter.MyViewHolder) viewHolder).viewForeground;
+            } else if (this.listener.getClass().getSimpleName().equals("EstudiantesActivity")) {
+                backgroundViewEdit = ((EstudiantesAdapter.MyViewHolder) viewHolder).viewBackgroundEdit;
+                backgroundViewDelete = ((EstudiantesAdapter.MyViewHolder) viewHolder).viewBackgroundDelete;
+                foregroundView = ((EstudiantesAdapter.MyViewHolder) viewHolder).viewForeground;
             }
             //Selected item
             if (actionState == ItemTouchHelper.ACTION_STATE_DRAG) {
