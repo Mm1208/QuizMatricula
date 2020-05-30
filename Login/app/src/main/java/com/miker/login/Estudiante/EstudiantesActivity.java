@@ -60,7 +60,7 @@ public class EstudiantesActivity extends AppCompatActivity implements RecyclerIt
         setSupportActionBar(toolbar);
 
         //toolbar fancy stuff
-        getSupportActionBar().setTitle(getString(R.string.item_cursos));
+        getSupportActionBar().setTitle(getString(R.string.item_estudiante));
 
         recyclerView = findViewById(R.id.recycler_view);
         estudianteList = new ArrayList<>();
@@ -68,13 +68,13 @@ public class EstudiantesActivity extends AppCompatActivity implements RecyclerIt
         //coordinatorLayout = findViewById(R.id.main_content);
 
         // go to update or add career
-       btn_insert = findViewById(R.id.add);
+        btn_insert = findViewById(R.id.add);
         btn_insert.setOnClickListener(new View.OnClickListener() {
             @Override
-                         public void onClick(View view) {
-                 insert_estudiante();
-                         }
-     });
+            public void onClick(View view) {
+                insert_estudiante();
+            }
+        });
 
         //delete swiping left and right
         ItemTouchHelper.SimpleCallback itemTouchHelperCallback = new RecyclerItemTouchHelper(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT, this);

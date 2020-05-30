@@ -3,6 +3,7 @@ package com.miker.login.Estudiante;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.RelativeLayout;
@@ -72,7 +73,7 @@ public class EstudiantesAdapter extends RecyclerView.Adapter<EstudiantesAdapter.
 
     @Override
     public int getItemCount() {
-        return estudianteListFiltered.size();
+        return estudianteList.size();
     }
 
     public void removeItem(int position) {
